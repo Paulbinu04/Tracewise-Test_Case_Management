@@ -151,13 +151,13 @@
     },
     {
         "id": "REQ-012",
-        "title": "upload photo",
-        "description": "Identify tasks from photos",
+        "title": "Uploading photo",
+        "description": "Identify tasks from the uploaded photo",
         "priority": "Medium",
         "type": "Functional",
         "status": "Proposed",
         "created_by": "Analyst",
-        "last_updated": "2025-04-05T20:35:56.041Z",
+        "last_updated": "2025-04-05T21:06:36.351Z",
         "version": "1.1",
         "tags": [
             "task"

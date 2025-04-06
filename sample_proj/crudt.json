@@ -1,0 +1,86 @@
+[
+  {
+    "id": "TC-006",
+    "title": "Create note with valid data",
+    "description": "Verify user can create a note with valid title, description, and tag.",
+    "steps": [
+      "Login and get token",
+      "Send POST request with valid data",
+      "Check response"
+    ],
+    "expected_result": "Note is created and returned in response.",
+    "status": "Approved",
+    "priority": "High",
+    "type": "Manual",
+    "automated": true,
+    "requirement_ids": [
+      "REQ-004"
+    ],
+    "created_by": "QA Lead",
+    "last_updated": "2025-04-05T13:33:51.217484Z",
+    "version": "1.0"
+  },
+  {
+    "id": "TC-007",
+    "title": "Update existing note",
+    "description": "Verify user can update a note's fields.",
+    "steps": [
+      "Login and create a note",
+      "Send PUT request with updates",
+      "Check updated note"
+    ],
+    "expected_result": "Note is updated and returned.",
+    "status": "Approved",
+    "priority": "Medium",
+    "type": "Manual",
+    "automated": true,
+    "requirement_ids": [
+      "REQ-005"
+    ],
+    "created_by": "QA Lead",
+    "last_updated": "2025-04-05T13:33:51.217484Z",
+    "version": "1.0"
+  },
+  {
+    "id": "TC-008",
+    "title": "Delete note by owner",
+    "description": "Verify note can be deleted by its owner.",
+    "steps": [
+      "Login and create a note",
+      "Send DELETE request",
+      "Observe success message"
+    ],
+    "expected_result": "Note is deleted and success message is returned.",
+    "status": "Approved",
+    "priority": "Medium",
+    "type": "Manual",
+    "automated": true,
+    "requirement_ids": [
+      "REQ-006"
+    ],
+    "created_by": "QA Lead",
+    "last_updated": "2025-04-05T13:33:51.217484Z",
+    "version": "1.0"
+  },
+  {
+    "id": "TC-009",
+    "title": "Fetch only own notes",
+    "description": "Verify only authenticated user's notes are returned.",
+    "steps": [
+      "Login and create a note",
+      "Send GET request",
+      "Verify only own notes are returned"
+    ],
+    "expected_result": "Only logged-in user's notes are shown.",
+    "status": "Approved",
+    "priority": "High",
+    "type": "Manual",
+    "automated": true,
+    "requirement_ids": [
+      "REQ-004"
+    ],
+    "created_by": "QA Lead",
+    "last_updated": "2025-04-05T13:33:51.217484Z",
+    "version": "1.0"
+  }
+]
